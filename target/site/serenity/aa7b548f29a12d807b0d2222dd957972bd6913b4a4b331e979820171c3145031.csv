@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Movie Search","Movie Search with IMBD ID","SUCCESS","2016-06-04T10:34:55.771-04:00","0.0","0.79"
+"Movie Search","Movie Search with Title","SUCCESS","2016-06-04T10:34:30.492-04:00","0.0","15.9"
+"Movie Search","Movie Search with Title & Incorrect Year","SUCCESS","2016-06-04T10:34:53.425-04:00","0.0","0.98"
+"Movie Search","Movie Search with Title & Year","SUCCESS","2016-06-04T10:34:50.917-04:00","0.0","1.27"
+"Movie Search","Search with Title","SUCCESS","2016-06-04T10:35:01.378-04:00","0.0","3.01"

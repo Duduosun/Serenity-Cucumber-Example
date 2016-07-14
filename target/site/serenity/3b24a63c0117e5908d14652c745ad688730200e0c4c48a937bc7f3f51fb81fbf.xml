@@ -1,0 +1,28 @@
+<acceptance-test-run title="Movie Search with IMBD ID (Failed Intentionally)" name="Movie Search with IMBD ID (Failed Intentionally)" description="" steps="6" successful="3" failures="1" skipped="2" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="298" timestamp="2016-07-14T11:04:52.790-04:00">
+  <user-story id="movie-search" name="Movie Search" path="test.feature"/>
+  <tags>
+    <tag name="Movie Search" type="feature"/>
+    <tag name="failing" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="58">
+    <description>Given I can access OMDB rest api</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="13">
+    <description>When I pass IMDB ID as &apos;tt1285016&apos;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="192">
+    <description>And make a call to API</description>
+  </test-step>
+  <test-step result="FAILURE" duration="19">
+    <description>Then I should see HTTP Status as &apos;201&apos;</description>
+    <error>java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;200&gt;</error>
+    <exception>java.lang.AssertionError:expected:&lt;201&gt; but was:&lt;200&gt;&#xd;
+[apiCalls.verify_HttpStatus(apiCalls.java:80), movieSearchStepdef.i_should_see_HTTP_status_as(movieSearchStepdef.java:40), ✽.Then I should see HTTP Status as &apos;201&apos;(test.feature:46)]</exception>
+  </test-step>
+  <test-step result="SKIPPED" duration="6">
+    <description>And I should see Title as &apos;The Scientific Network&apos;</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="5">
+    <description>And I should see Genre as &apos;Biography, Drama&apos;</description>
+  </test-step>
+</acceptance-test-run>

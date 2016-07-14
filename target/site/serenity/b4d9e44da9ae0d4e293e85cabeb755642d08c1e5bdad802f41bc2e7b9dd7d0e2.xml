@@ -1,0 +1,25 @@
+<acceptance-test-run title="Movie Search with IMBD ID" name="Movie Search with IMBD ID" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="334" timestamp="2016-07-14T11:04:51.744-04:00">
+  <user-story id="movie-search" name="Movie Search" path="test.feature"/>
+  <tags>
+    <tag name="Movie Search" type="feature"/>
+    <tag name="smoke" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="75">
+    <description>Given I can access OMDB rest api</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="12">
+    <description>When I pass IMDB ID as &apos;tt1285016&apos;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="209">
+    <description>And make a call to API</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="13">
+    <description>Then I should see HTTP Status as &apos;200&apos;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="10">
+    <description>And I should see Title as &apos;The Social Network&apos;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="11">
+    <description>And I should see Genre as &apos;Biography, Drama&apos;</description>
+  </test-step>
+</acceptance-test-run>

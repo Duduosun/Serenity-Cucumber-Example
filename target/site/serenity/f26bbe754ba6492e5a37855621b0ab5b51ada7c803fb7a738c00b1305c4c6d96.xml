@@ -1,0 +1,102 @@
+<acceptance-test-run title="Search with Title" name="Search with Title" description="" steps="20" successful="20" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2067" timestamp="2016-07-14T11:04:53.716-04:00">
+  <user-story id="movie-search" name="Movie Search" path="test.feature"/>
+  <tags>
+    <tag name="Movie Search" type="feature"/>
+    <tag name="regression" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>Name</header>
+      <header>Genre</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>now you see me</value>
+        <value>Crime, Mystery, Thriller</value>
+      </row>
+      <row result="SUCCESS">
+        <value>zootopia</value>
+        <value>Animation, Action, Adventure</value>
+      </row>
+      <row result="SUCCESS">
+        <value>toy story</value>
+        <value>Animation, Adventure, Comedy</value>
+      </row>
+      <row result="SUCCESS">
+        <value>The Shawshank Redemption</value>
+        <value>Crime, Drama</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {Name=now you see me, Genre=Crime, Mystery, Thriller}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="65">
+      <description>Given I can access OMDB rest api</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="49">
+      <description>When I pass movie title as &apos;now you see me&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="228">
+      <description>And make a call to API</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15">
+      <description>Then I should see HTTP Status as &apos;200&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10">
+      <description>And I should see Genre as &apos;Crime, Mystery, Thriller&apos;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {Name=zootopia, Genre=Animation, Action, Adventure}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="69">
+      <description>Given I can access OMDB rest api</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11">
+      <description>When I pass movie title as &apos;zootopia&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="194">
+      <description>And make a call to API</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="37">
+      <description>Then I should see HTTP Status as &apos;200&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="12">
+      <description>And I should see Genre as &apos;Animation, Action, Adventure&apos;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {Name=toy story, Genre=Animation, Adventure, Comedy}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="77">
+      <description>Given I can access OMDB rest api</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15">
+      <description>When I pass movie title as &apos;toy story&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="272">
+      <description>And make a call to API</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14">
+      <description>Then I should see HTTP Status as &apos;200&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11">
+      <description>And I should see Genre as &apos;Animation, Adventure, Comedy&apos;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {Name=The Shawshank Redemption, Genre=Crime, Drama}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="100">
+      <description>Given I can access OMDB rest api</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="12">
+      <description>When I pass movie title as &apos;The Shawshank Redemption&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="782">
+      <description>And make a call to API</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11">
+      <description>Then I should see HTTP Status as &apos;200&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15">
+      <description>And I should see Genre as &apos;Crime, Drama&apos;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
