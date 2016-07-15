@@ -8,4 +8,4 @@ As the name says, the project provides a idea for starters, on how to put Sereni
 - Build tool: Gradle
 - Framework & Libs: Serenity, Cucumber, Junit, rest-assured.
 
-   [OMDB-API]: <http://www.omdbapi.com>
+[OMDB-API]: http://www.omdbapi.com
