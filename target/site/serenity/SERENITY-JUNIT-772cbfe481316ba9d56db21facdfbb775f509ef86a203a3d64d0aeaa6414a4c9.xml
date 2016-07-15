@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Movie Search" skipped="0" tests="9" time="9.63" timestamp="2016-07-196 11:04:41"><testcase name="Movie Search with Title"/><testcase name="Movie Search with Title &amp; Year"/><testcase name="Movie Search with Title &amp; Incorrect Year"/><testcase name="Movie Search with IMBD ID"/><testcase name="Movie Search with IMBD ID (Failed Intentionally)"><failure message="expected:&lt;201&gt; but was:&lt;200&gt;" type="java.lang.AssertionError">expected:&lt;201&gt; but was:&lt;200&gt;</failure><system-err>expected:&lt;201&gt; but was:&lt;200&gt;&#13;
-apiCalls.verify_HttpStatus(apiCalls.java:80)&#13;
-movieSearchStepdef.i_should_see_HTTP_status_as(movieSearchStepdef.java:40)&#13;
-✽.Then I should see HTTP Status as '201'(test.feature:46)&#13;
-</system-err></testcase><testcase name="Search with Title"/></testsuite>
